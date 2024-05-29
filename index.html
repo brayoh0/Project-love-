@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #ffe4e1;
+            padding: 20px;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+        }
+        h1 {
+            font-size: 3em;
+            color: #ff69b4;
+        }
+        main {
+            padding: 20px;
+        }
+        .love-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .love-button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .love-button:hover {
+            background-color: #ff1493;
+        }
+        #love-message {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #ff1493;
+        }
+        .gallery {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .image-gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .love-notes {
+            margin: 40px 0;
+            line-height: 1.6;
+        }
+        .love-songs {
+            text-align: center;
+            margin: 40px 0;
+        }
+        audio {
+            display: block;
+            margin: 10px auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffe4e1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="flowers.jpg" alt="Flowers" class="header-image">
+        <h1>❤️ Love Page ❤️</h1>
+    </header>
+
+    <main>
+        <section class="love-section">
+            <h2>How Much I Love You</h2>
+            <p>You are the most amazing person in the world, and my love for you is infinite. Here are some interactive buttons to show my affection.</p>
+            <button class="love-button" onclick="showLoveMessage()">Click for Love</button>
+            <p id="love-message"></p>
+        </section>
+
+        <section class="gallery">
+            <h2>Love Pictures</h2>
+            <div class="image-gallery">
+                <img src="love1.jpg" alt="Love Picture 1">
+                <img src="love2.jpg" alt="Love Picture 2">
+                <img src="love3.jpg" alt="Love Picture 3">
+            </div>
+        </section>
+
+        <section class="love-notes">
+            <h2>Love Notes</h2>
+            <p>Every day with you feels like a beautiful dream come true. You light up my life in ways I never thought possible.</p>
+            <p>Your smile is my sunshine, and your touch is my comfort. I can't imagine my life without you.</p>
+            <p>With you, every moment is a treasure, and every day is a gift. I love you more than words can say.</p>
+        </section>
+
+        <section class="love-songs">
+            <h2>Love Songs</h2>
+            <p>Here are some songs that remind me of you:</p>
+            <audio controls>
+                <source src="song1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio controls>
+                <source src="song2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio controls>
+                <source src="song3.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Love Page. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showLoveMessage() {
+            const message = "I love you more than anything in this world!";
+            document.getElementById("love-message").textContent = message;
+        }
+    </script>
+</body>
+</html>
